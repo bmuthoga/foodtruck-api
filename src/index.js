@@ -32,7 +32,7 @@ passport.deserializeUser(Account.deserializeUser());
 
 // api routes v1
 // here we're taken to './routes' when we receive '/v1'
-app.use('/v1', routes);
+app.use('/api/v1', routes);
 
 app.server.listen(config.port);
 console.log(`Started on port ${app.server.address().port}`);
